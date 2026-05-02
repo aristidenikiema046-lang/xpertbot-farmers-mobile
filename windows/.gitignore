@@ -1,0 +1,17 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android-specific
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore
+
+# Web-specific
+# On ne garde que le dossier docs pour GitHub Pages, 
+# mais on ignore les fichiers de build temporaires
+.web_assets/
