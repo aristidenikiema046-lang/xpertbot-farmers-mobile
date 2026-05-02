@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import '../models/farmer.dart';
 
 class ApiService {
-  // Garde uniquement cette ligne à l'intérieur de la classe
-  static const String baseUrl = "http://192.168.1.16:8000/api";;
+  // Correction : un seul point-virgule ici
+  static const String baseUrl = "http://192.168.1.16:8000/api";
 
   Future<List<Farmer>> fetchFarmers() async {
     final response = await http.get(Uri.parse('$baseUrl/farmers'));
@@ -17,5 +17,3 @@ class ApiService {
     }
   }
 }
-
-// SUPPRIME LA LIGNE QUI ÉTAIT ICI (String baseUrl = ...)
