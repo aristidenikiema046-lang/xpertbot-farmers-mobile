@@ -4,7 +4,7 @@ import '../models/farmer.dart';
 
 class ApiService {
   // Garde uniquement cette ligne à l'intérieur de la classe
-  static const String baseUrl = "http://192.168.1.16:8000/api";
+  static const String baseUrl = "http://192.168.1.16:8000/api";;
 
   Future<List<Farmer>> fetchFarmers() async {
     final response = await http.get(Uri.parse('$baseUrl/farmers'));
